@@ -9,7 +9,7 @@ import {
     faGears,
     faCode,
 } from "@fortawesome/free-solid-svg-icons";
-import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
 const Sidebar = () => (
     <div className="nav-bar">
@@ -66,6 +66,15 @@ const Sidebar = () => (
                     href="https://www.linkedin.com/in/daniel-braithwaite/"
                 >
                     <FontAwesomeIcon icon={faLinkedin} color="#F2EFEB" />
+                </a>
+            </li>
+            <li>
+                <a
+                    target="_blank"
+                    rel="noreferrer"
+                    href="https://github.com/16Bocchi"
+                >
+                    <FontAwesomeIcon icon={faGithub} color="#F2EFEB" />
                 </a>
             </li>
         </ul>
