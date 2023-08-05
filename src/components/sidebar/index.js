@@ -13,12 +13,12 @@ import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
 const Sidebar = () => (
     <div className="nav-bar">
-        <Link className="logo" to="/">
+        <Link className="logo" to="/portfolio/">
             <img src={KBLogo} alt="logo"></img>
         </Link>
 
         <nav>
-            <NavLink exact="true" activeClassname="active" to="/">
+            <NavLink exact="true" activeClassname="active" to="/portfolio/">
                 <FontAwesomeIcon icon={faHome} color="#F2EFEB" />
             </NavLink>
 
@@ -26,7 +26,7 @@ const Sidebar = () => (
                 exact="true"
                 activeClassname="active"
                 className="about-link"
-                to="/about"
+                to="/portfolio/about"
             >
                 <FontAwesomeIcon icon={faUser} color="#F2EFEB" />
             </NavLink>
@@ -34,17 +34,8 @@ const Sidebar = () => (
             <NavLink
                 exact="true"
                 activeClassname="active"
-                className="experience-link"
-                to="/experience"
-            >
-                <FontAwesomeIcon icon={faGears} color="#F2EFEB" />
-            </NavLink>
-
-            <NavLink
-                exact="true"
-                activeClassname="active"
                 className="project-link"
-                to="/project"
+                to="/portfolio/projects"
             >
                 <FontAwesomeIcon icon={faCode} color="#F2EFEB" />
             </NavLink>
@@ -53,7 +44,7 @@ const Sidebar = () => (
                 exact="true"
                 activeClassname="active"
                 className="contact-link"
-                to="/contact"
+                to="/portfolio/contact"
             >
                 <FontAwesomeIcon icon={faEnvelope} color="#F2EFEB" />
             </NavLink>

@@ -21,11 +21,11 @@
     h2 {
         color: #0e1140;
         margin-top: 20px;
-        font-weight: 500;
-        font-size: 20px;
+        font-weight: 400;
+        font-size: 19px;
         font-family: sans-serif;
-        letter-spacing: 2px;
-        animation: fadeIn 0.5s 1.8 backwards;
+        letter-spacing: 1px;
+        animation: fadeIn 0.5s 2.5s backwards;
     }
 
     .flat-button {
@@ -39,7 +39,7 @@
         border: 2px solid #404259;
         margin-top: 15px;
         float: left;
-        animation: fadeIn 1s 1.8s backwards;
+        animation: fadeIn 1s 3s backwards;
         white-space: nowrap;
 
         &:hover {

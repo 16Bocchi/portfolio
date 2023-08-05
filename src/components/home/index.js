@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import "./index.scss";
 import AnimatedLetters from "../animatedLetters";
 import React, { useEffect, useState } from "react";
+import Loader from "react-loaders";
 
 const Home = () => {
     const [letterClass, setLetterClass] = useState("text-animate");
@@ -34,31 +35,37 @@ const Home = () => {
     }, []);
 
     return (
-        <div className="container home-page">
-            <div className="text-zone">
-                <h1>
-                    <span className={letterClass}>H</span>
-                    <span className={`${letterClass} _12`}>i</span>
-                    <span className={`${letterClass} _13`}>,</span>
-                    <br />
-                    <AnimatedLetters
-                        letterClass={letterClass}
-                        stringArray={nameArray}
-                        iDx={15}
-                    />
-                    <br />
-                    <AnimatedLetters
-                        letterClass={letterClass}
-                        stringArray={subtitleArray}
-                        iDx={18}
-                    />
-                </h1>
-                <h2>Software engineering student / Maths enthusiast</h2>
-                <Link to="/contact" className="flat-button">
-                    Contact me
-                </Link>
+        <>
+            <div className="container home-page">
+                <div className="text-zone">
+                    <h1>
+                        <span className={`${letterClass} _5`}>H</span>
+                        <span className={`${letterClass} _6`}>i</span>
+                        <span className={`${letterClass} _7`}>,</span>
+                        <br />
+                        <AnimatedLetters
+                            letterClass={letterClass}
+                            stringArray={nameArray}
+                            iDx={10}
+                        />
+                        <br />
+                        <AnimatedLetters
+                            letterClass={letterClass}
+                            stringArray={subtitleArray}
+                            iDx={25}
+                        />
+                    </h1>
+                    <h2>
+                        Software engineering student / Maths enthusiast / Robot
+                        fan
+                    </h2>
+                    <Link to="/portfolio/contact" className="flat-button">
+                        Contact me
+                    </Link>
+                </div>
             </div>
-        </div>
+            <Loader type="square-spin" />
+        </>
     );
 };
 

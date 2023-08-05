@@ -12,12 +12,12 @@
     animation-fill-mode: both;
 
     &:hover {
-        animation: shakeY 0.8s;
+        animation: jello 1.5s;
         color: #101685;
     }
 }
 
-@for $i from 1 through 35 {
+@for $i from 1 through 50 {
     .text-animate._#{$i} {
         animation-delay: #{$i/10}s;
     }
